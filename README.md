@@ -1,9 +1,3 @@
-# Telegram-Senko-Bot
-
-<p align="center">
-  <img src="https://telegra.ph/file/129dc049e4766a6f2c17e.mp4" alt="UwU! An example!"/>
-</p>
-
 ## About The Bot
 
 This bot greets new members on telegram groups with a cute, personalised gif with Senko-san.
