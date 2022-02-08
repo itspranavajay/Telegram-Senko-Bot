@@ -49,7 +49,7 @@ async def new(_, m: Message):
 
         senkos[0] = senkos[0]
 
-        senkotext = [f'Welcome to the {m.chat.title}! master {m.from_user.first_name}']
+        senkotext = [f'Welcome to the chat! master {m.from_user.first_name}']
 
         s1 = senkos[0].size[0] // 2
         s2 = 240    
