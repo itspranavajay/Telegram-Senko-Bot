@@ -35,7 +35,7 @@ async def start(client, message):
 async def new(_, m: Message):
     if m.from_user.id:
         chat = m.chat.title 
-        senko = Image.open('senko-sewayaki-kitsune-no-senko-san (4).gif')
+        senko = Image.open('senko.gif')
         senkos = [senko.copy()]
 
         try:
