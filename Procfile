@@ -1,0 +1,1 @@
+moe: python main.py
