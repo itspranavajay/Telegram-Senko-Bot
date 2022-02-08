@@ -35,7 +35,7 @@ async def start(client, message):
 async def new(_, m: Message):
     if m.from_user.id:
         chat = m.chat.title 
-        senko = Image.open('senko.gif')
+        senko = Image.open('senko-sewayaki-kitsune-no-senko-san (4).gif')
         senkos = [senko.copy()]
 
         try:
@@ -49,16 +49,16 @@ async def new(_, m: Message):
 
         senkos[0] = senkos[0]
 
-        senkotext = [f'Welcome to the chat! master {m.from_user.first_name}']
+        senkotext = [f'Welcome to the {m.chat.title}! master {m.user.first_name}']
 
         s1 = senkos[0].size[0] // 2
         s2 = 240    
-        senkofont = ImageFont.truetype("fonts.otf", 25)
+        senkofont = ImageFont.truetype("fonts.otf", 15)
         s3 = math.ceil(len(senkos) / len(senkotext))
 
         for i in range(len(senkos)):
             draw = ImageDraw.Draw(senkos[i])
-            s4 = (s1 - len(senkotext[i // s3]) * 6, s2)
+            s4 = (s1 - len(senkotext[i // s3]) * 4, s2)
             draw.text(s4, senkotext[i // s3], font=senkofont, anchor=None)
 
         senkos[0].save("newsenko.gif",
@@ -68,7 +68,7 @@ async def new(_, m: Message):
                      duration=150,              
                      loop=0)
 
-        await m.reply_video(video="newsenko.gif", caption=f"Welcome to the {m.chat.title}! master {m.from_user.first_name}")
+        await m.reply_video(video="newsenko.gif", caption=f"Welcome to the {m.chat.title}! master {m.user.first_name}")
   
 senko_group = 6
  
