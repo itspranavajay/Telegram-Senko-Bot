@@ -1,0 +1,3 @@
+pyrogram
+pillow
+tgcrypto==1.2.2
